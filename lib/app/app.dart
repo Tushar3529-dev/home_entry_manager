@@ -1,5 +1,8 @@
 import 'package:assignment/core/constants/app_colors.dart';
+import 'package:assignment/dependency_injection.dart';
+import 'package:assignment/features/visitor_queue/presentation/cubit/visitor_cubit.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../core/theme/app_theme.dart';
 import '../features/visitor_queue/presentation/pages/home_page.dart';
@@ -9,13 +12,22 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Home Manager',
-      debugShowCheckedModeBanner: false,
+    return MultiBlocProvider(
+      providers: [
 
-      theme: AppTheme.lightTheme,
+        BlocProvider(
+          create: (_) =>
+              getIt<VisitorCubit>()
+                ..loadVisitors(),
+        ),
 
-      home: const HomePage(),
+      ],
+
+      child: MaterialApp(
+          theme: AppTheme.lightTheme,
+        debugShowCheckedModeBanner: false,
+        home: const HomePage(),
+      ),
     );
   }
 }

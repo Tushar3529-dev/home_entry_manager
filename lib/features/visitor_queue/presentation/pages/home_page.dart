@@ -2,6 +2,7 @@
 
 import 'package:assignment/core/widgets/app_bottom_navbar.dart';
 import 'package:assignment/features/visitor_queue/presentation/pages/send_notification_page.dart';
+import 'package:assignment/features/visitor_queue/presentation/pages/visitors_page.dart';
 import 'package:flutter/material.dart';
 
 import '../widgets/home_owner_card.dart';
@@ -144,13 +145,42 @@ const SizedBox(height: 20),
         ),
       ),
 
-      bottomNavigationBar:
-      
-          AppBottomNavbar(
-        currentIndex: 0,
-        onTap: (index) {},
+     bottomNavigationBar: AppBottomNavbar(
+  currentIndex: 0,
+  onTap: (index) {
+    switch (index) {
+      case 0:
+        break;
 
-      ),
+      case 1:
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(
+            builder: (_) => const VisitorsPage(),
+          ),
+        );
+        break;
+
+      /* case 2:
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(
+            builder: (_) => const DeliveriesPage(),
+          ),
+        );
+        break;
+
+      case 3:
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(
+            builder: (_) => const ActivityPage(),
+          ),
+        );
+        break; */
+    }
+  },
+),
     );
   }
 }

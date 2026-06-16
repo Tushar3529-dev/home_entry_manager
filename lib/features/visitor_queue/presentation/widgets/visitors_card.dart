@@ -90,13 +90,13 @@ class VisitorCard extends StatelessWidget {
   }
   Color _statusColor(VisitorStatus status) {
   switch (status) {
-    case VisitorStatus.pending:
+    case VisitorStatus.Pending:
       return Colors.orange;
 
-    case VisitorStatus.approved:
+    case VisitorStatus.Approved:
       return Colors.green;
 
-    case VisitorStatus.cancelled:
+    case VisitorStatus.Cancelled:
       return Colors.red;
   }
 }

@@ -9,7 +9,7 @@ class VisitorState {
   const VisitorState({
     this.loading = false,
     this.visitors = const [],
-    this.filter = VisitorFilter.all,
+    this.filter = VisitorFilter.All,
   });
 
   VisitorState copyWith({

@@ -1,5 +1,5 @@
 enum VisitorStatus {
-  pending,
-  approved,
-  cancelled,
+  Pending,
+  Approved,
+  Cancelled,
 }

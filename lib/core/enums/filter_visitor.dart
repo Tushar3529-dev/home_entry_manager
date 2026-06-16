@@ -1,6 +1,6 @@
 enum VisitorFilter {
-  all,
-  pending,
-  approved,
-  cancelled,
+  All,
+  Pending,
+  Approved,
+  Cancelled,
 }

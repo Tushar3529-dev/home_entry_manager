@@ -15,22 +15,22 @@ class StatusIcon extends StatelessWidget {
 
     switch (status) {
 
-      case VisitorStatus.pending:
+      case VisitorStatus.Pending:
         return CircleAvatar(
           backgroundColor: Colors.orange,
-          child: Icon(Icons.schedule),
+          child: Icon(Icons.schedule,color:Colors.white),
         );
 
-      case VisitorStatus.approved:
+      case VisitorStatus.Approved:
         return CircleAvatar(
           backgroundColor: Colors.green,
-          child: Icon(Icons.check),
+          child: Icon(Icons.check,color:Colors.white),
         );
 
-      case VisitorStatus.cancelled:
+      case VisitorStatus.Cancelled:
         return CircleAvatar(
           backgroundColor: Colors.red,
-          child: Icon(Icons.close),
+          child: Icon(Icons.close,color:Colors.white),
         );
     }
   }
