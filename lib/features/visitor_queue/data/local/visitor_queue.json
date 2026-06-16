@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Amit Sharma",
+    "image": "https://i.pravatar.cc/300?img=1",
+    "unit": "A101",
+    "type": "visitor",
+    "status": "pending",
+    "time": "10:15 AM"
+  },
+  {
+    "id": 2,
+    "name": "Swiggy Delivery",
+    "image": "https://i.pravatar.cc/300?img=2",
+    "unit": "B202",
+    "type": "foodDelivery",
+    "status": "approved",
+    "time": "10:20 AM"
+  },
+  {
+    "id": 3,
+    "name": "Amazon Package",
+    "image": "https://i.pravatar.cc/300?img=3",
+    "unit": "C303",
+    "type": "packageDelivery",
+    "status": "approved",
+    "time": "10:25 AM"
+  },
+  {
+    "id": 4,
+    "name": "Rahul Verma",
+    "image": "https://i.pravatar.cc/300?img=4",
+    "unit": "D404",
+    "type": "visitor",
+    "status": "cancelled",
+    "time": "10:30 AM"
+  },
+  {
+    "id": 5,
+    "name": "Zomato Delivery",
+    "image": "https://i.pravatar.cc/300?img=5",
+    "unit": "A102",
+    "type": "foodDelivery",
+    "status": "pending",
+    "time": "10:35 AM"
+  },
+  {
+    "id": 6,
+    "name": "Flipkart Package",
+    "image": "https://i.pravatar.cc/300?img=6",
+    "unit": "B205",
+    "type": "packageDelivery",
+    "status": "approved",
+    "time": "10:40 AM"
+  },
+  {
+    "id": 7,
+    "name": "Sneha Kapoor",
+    "image": "https://i.pravatar.cc/300?img=7",
+    "unit": "C101",
+    "type": "visitor",
+    "status": "pending",
+    "time": "10:45 AM"
+  },
+  {
+    "id": 8,
+    "name": "Blinkit Delivery",
+    "image": "https://i.pravatar.cc/300?img=8",
+    "unit": "D301",
+    "type": "foodDelivery",
+    "status": "cancelled",
+    "time": "10:50 AM"
+  },
+  {
+    "id": 9,
+    "name": "DTDC Package",
+    "image": "https://i.pravatar.cc/300?img=9",
+    "unit": "A201",
+    "type": "packageDelivery",
+    "status": "pending",
+    "time": "10:55 AM"
+  },
+  {
+    "id": 10,
+    "name": "Priya Singh",
+    "image": "https://i.pravatar.cc/300?img=10",
+    "unit": "B102",
+    "type": "visitor",
+    "status": "approved",
+    "time": "11:00 AM"
+  }
+]
