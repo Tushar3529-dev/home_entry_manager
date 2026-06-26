@@ -3,6 +3,7 @@ import 'package:assignment/core/enums/visitor_status.dart';
 import 'package:assignment/core/widgets/app_bottom_navbar.dart';
 import 'package:assignment/features/visitor_queue/presentation/cubit/visitor_cubit.dart';
 import 'package:assignment/features/visitor_queue/presentation/cubit/visitor_state.dart';
+import 'package:assignment/features/visitor_queue/presentation/pages/activity_page.dart';
 import 'package:assignment/features/visitor_queue/presentation/pages/home_page.dart';
 import 'package:assignment/features/visitor_queue/presentation/pages/send_notification_page.dart';
 import 'package:assignment/features/visitor_queue/presentation/widgets/filter_chips.dart';
@@ -198,11 +199,11 @@ final filteredVisitors = switch (state.filter) {
         
         break;
 
-      /* case 2:
+      case 2:
         Navigator.pushReplacement(
           context,
           MaterialPageRoute(
-            builder: (_) => const DeliveriesPage(),
+            builder: (_) => const ActivityPage(),
           ),
         );
         break;
@@ -214,7 +215,7 @@ final filteredVisitors = switch (state.filter) {
             builder: (_) => const ActivityPage(),
           ),
         );
-        break; */
+        break;
     }
   },
 ),
